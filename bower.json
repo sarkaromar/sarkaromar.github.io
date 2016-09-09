@@ -1,0 +1,21 @@
+{
+  "name": "agg",
+  "description": "Baby HTML templete or Wordpress theme structure.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Pixelomatic"
+  ],
+  "license": "Private",
+  "moduleType": [],
+  "homepage": "http://pixelomatic.com/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
