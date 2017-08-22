@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Line</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<div class="p_node">
+		<div class="node1"></div>
+		<div class="node2" style="left: 0px; top: 0px;"></div>
+		<div class="node2" style="right: 0px; top: 0px;"></div>
+		<div class="node2" style="right: 0px; top: 500px;"></div>
+		<div class="node2" style="left: 0px; top: 500px;"></div>
+	</div>
+
+	<script type="text/javascript" src="script/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="script/jquery.connectingLine.js"></script>
+
+	<script type="text/javascript">
+
+		var mySVG = $('.p_node').connect();
+
+		$(document).one('click', function(){
+			mySVG.drawLine({
+				left_node:'.node1',
+				right_node:'.node2',
+				horizantal_gap:0,
+				error:true,
+				width:1
+			});
+		});
+
+		$(document).bind('mousemove', function(e){
+			$('.node1').css({
+				left:  e.pageX -20,
+				top:   e.pageY -15
+			});
+			mySVG.redrawLines();
+		});
+
+	</script>
+</body>
+</html>

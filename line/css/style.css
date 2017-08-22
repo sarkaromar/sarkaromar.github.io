@@ -1,0 +1,28 @@
+body {
+	padding:0px;
+	margin:0px;
+}
+
+
+.node1{
+	position:absolute;
+	width:20px;
+	height: 20px;
+	border-radius: 100%;
+	padding:10px;
+	background:#666;
+	color : #fff;
+	text-align: center;
+	cursor:pointer;
+	font-family:Georgia, "Times New Roman", Times, serif
+}
+.node2{
+	position:absolute;
+	width:20px;
+	height: 20px;
+	border-radius: 100%;
+	padding:10px;
+	background:#F99;
+	cursor:pointer;
+	font-family:Georgia, "Times New Roman", Times, serif
+}
